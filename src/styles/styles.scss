@@ -1,0 +1,71 @@
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+/* FONTS
+    font-family: 'Ms Madi', cursive;
+
+    font-family: 'Plus Jakarta Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap');
+$msMadi: 'Ms Madi';
+$plusJakarta: 'Plus Jakarta Sans';
+
+/* SCSS HEX */
+$antique-brass: #cb997eff;
+$desert-sand: #ddbea9ff;
+$champagne-pink: #ffe8d6ff;
+$ash-gray: #b7b7a4ff;
+$artichoke: #a5a58dff;
+$ebony: #6b705cff;
+
+#{$a-tags} {
+  color: $ebony;
+  text-decoration: none;
+}
+#{$a-tags-hover} {
+  color: $artichoke;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $champagne-pink;
+  .OilEssence {
+    color: $ebony;
+    font-family: $msMadi;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    width: 50vw;
+    justify-content: flex-end;
+  }
+  li {
+    width: 10vw;
+    font-family: $plusJakarta;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: $artichoke;
+  h3 {
+    color: $champagne-pink;
+    font-family: $plusJakarta;
+    font-size: 4vh;
+  }
+  span {
+    font-family: $msMadi;
+    color: $antique-brass;
+    font-size: 5vh;
+  }
+}
+
+/* Theme for main body*/
+
+h2 {
+  font-family: $msMadi;
+  font-size: 5vh;
+}

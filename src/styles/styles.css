@@ -1,0 +1,57 @@
+/* FONTS
+    font-family: 'Ms Madi', cursive;
+
+    font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+/* SCSS HEX */
+a, a:active, a:hover, a:visited {
+  color: #6b705c;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: #a5a58d;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffe8d6;
+}
+header .OilEssence {
+  color: #6b705c;
+  font-family: "Ms Madi";
+}
+header ul {
+  display: flex;
+  list-style: none;
+  width: 50vw;
+  justify-content: flex-end;
+}
+header li {
+  width: 10vw;
+  font-family: "Plus Jakarta Sans";
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #a5a58d;
+}
+footer h3 {
+  color: #ffe8d6;
+  font-family: "Plus Jakarta Sans";
+  font-size: 4vh;
+}
+footer span {
+  font-family: "Ms Madi";
+  color: #cb997e;
+  font-size: 5vh;
+}
+
+/* Theme for main body*/
+h2 {
+  font-family: "Ms Madi";
+  font-size: 5vh;
+}/*# sourceMappingURL=styles.css.map */
