@@ -1,10 +1,12 @@
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
 
+$small: 300px;
+$medium: 900px;
 /* FONTS
-    font-family: 'Ms Madi', cursive;
+        font-family: 'Ms Madi', cursive;
 
-    font-family: 'Plus Jakarta Sans', sans-serif; */
+        font-family: 'Plus Jakarta Sans', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap');
 $msMadi: 'Ms Madi';
@@ -17,6 +19,8 @@ $champagne-pink: #ffe8d6ff;
 $ash-gray: #b7b7a4ff;
 $artichoke: #a5a58dff;
 $ebony: #6b705cff;
+$offWhite: rgb(255, 235, 222);
+$black: black;
 
 #{$a-tags} {
   color: $ebony;
@@ -30,36 +34,62 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: $champagne-pink;
+  background-color: $desert-sand;
   .OilEssence {
     color: $ebony;
     font-family: $msMadi;
   }
-  ul {
+  .desktopMenu {
     display: flex;
     list-style: none;
     width: 50vw;
     justify-content: flex-end;
   }
+  .menuButton {
+    display: none;
+  }
+  .dropdownMenu {
+    display: none;
+    list-style: none;
+  }
+
   li {
     width: 10vw;
     font-family: $plusJakarta;
   }
+
+  @media screen and (max-width: $medium) {
+    height: 8vh;
+    .menuButton {
+      display: block;
+      color: $ebony;
+    }
+    .desktopMenu {
+      display: none;
+    }
+  }
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   background-color: $artichoke;
+  align-items: center;
+  height: 8vh;
   h3 {
     color: $champagne-pink;
     font-family: $plusJakarta;
-    font-size: 4vh;
+    font-size: 3vh;
   }
   span {
+    padding-left: 1vw;
     font-family: $msMadi;
-    color: $antique-brass;
-    font-size: 5vh;
+    color: $champagne-pink;
+    font-size: 4vh;
   }
 }
 
@@ -68,4 +98,52 @@ footer {
 h2 {
   font-family: $msMadi;
   font-size: 5vh;
+  color: $ebony;
+}
+
+.body {
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+/* Hero Section*/
+.Hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.heroText {
+  width: 40vw;
+  line-height: 1.4;
+}
+p {
+  font-size: 3vh;
+  font-family: $plusJakarta;
+}
+
+span {
+  font-family: $msMadi;
+  font-size: 4vh;
+}
+
+.heroImage {
+  height: auto;
+  width: auto;
+}
+.heroImageFile {
+  height: 50vh;
+}
+/* About Section*/
+.logo {
+  height: 35vh;
+  align-items: center;
+}
+.oilImage {
+  height: 35vh;
 }

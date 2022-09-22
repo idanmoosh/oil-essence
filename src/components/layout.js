@@ -1,5 +1,8 @@
 import { Link, Outlet } from 'react-router-dom';
-import styles from '../styles/styles.css';
+
+import '../styles/styles.css';
+import Menu from './Menu';
+import Dropdown from './dropown';
 
 export default function Layout() {
   return (
@@ -10,19 +13,8 @@ export default function Layout() {
         </h1>
         {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
-        <nav>
-          <ul>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/about'>About</Link>
-            </li>
-            <li>
-              <Link to='/Store'>Store</Link>
-            </li>
-          </ul>
-        </nav>
+        <Dropdown />
+        <Menu className='desktopMenu' />
       </header>
 
       {/* An <Outlet> renders whatever child route is currently active,
