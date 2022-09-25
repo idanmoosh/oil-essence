@@ -7,6 +7,7 @@
 a, a:active, a:hover, a:visited {
   color: #6b705c;
   text-decoration: none;
+  font-size: 3vh;
 }
 
 a:active, a:hover {
@@ -21,6 +22,7 @@ header {
 }
 header .OilEssence {
   color: #6b705c;
+  font-size: 10vh;
   font-family: "Ms Madi";
 }
 header .desktopMenu {
@@ -44,9 +46,13 @@ header li {
   header {
     height: 8vh;
   }
+  header .OilEssence {
+    font-size: 6.5vh;
+  }
   header .menuButton {
     display: block;
     color: #6b705c;
+    font-size: 5vh;
   }
   header .desktopMenu {
     display: none;
@@ -79,19 +85,20 @@ footer span {
 /* Theme for main body*/
 h2 {
   font-family: "Ms Madi";
-  font-size: 5vh;
+  font-size: 8vh;
   color: #6b705c;
+}
+
+html {
+  background-color: #ffe8d6;
 }
 
 .body {
   align-items: center;
   justify-content: space-around;
-  height: auto;
   align-items: center;
   display: flex;
-  background-color: white;
   flex-direction: column;
-  padding-top: 5vh;
 }
 
 /* Hero Section*/
@@ -112,9 +119,9 @@ p {
   font-family: "Plus Jakarta Sans";
 }
 
-span {
+.HeroSpan {
   font-family: "Ms Madi";
-  font-size: 4vh;
+  font-size: 5vh;
 }
 
 .heroImage {
@@ -134,4 +141,21 @@ span {
 
 .oilImage {
   height: 35vh;
+}
+
+/* Store Section*/
+.StoreBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.oneProductContainer {
+  border: 2px solid rgb(255, 235, 222);
+  width: 60vw;
+}
+
+.productDetails {
+  width: 25vw;
+  background-color: #ddbea9;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { IoIosMenu } from 'react-icons/io';
 import Menu from './Menu';
 
@@ -12,10 +12,11 @@ export default function Dropdown(props) {
       setDisplay('none');
     }
   }
+
   return (
     <div className='dropdown'>
       <IoIosMenu className='menuButton' onClick={handleClick} />
-      <Menu className='dropdownMenu' style={{ display: display }} />
+      <Menu id='dropdownMenu' className='dropdownMenu' display={display} />
     </div>
   );
 }

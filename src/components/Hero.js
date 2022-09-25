@@ -10,13 +10,17 @@ export default function Hero() {
         <h2>Take a breath...</h2>
         <p>
           {' '}
-          Perfume you space, change your enviorment. with Oil Essence you can
+          Perfume your space, change your enviorment. with Oil Essence you can
           allow yourself to be at peace anywhere.
+          <br />
           <span>
-            <Link to='/Store'>Join Us</Link>
+            <Link className='HeroSpan' to='/Store'>
+              Join us
+            </Link>
           </span>{' '}
-          with our premium Subsciption. wether you're at home, office or
-          Vacation. you can use <span>Oil Essence</span>
+          with our premium subsciption.
+          <br /> whether you're at home, at the office or on vacation. you can
+          use <span className='HeroSpan'>Oil Essence</span>
         </p>
       </div>
       <div className='heroImage'>

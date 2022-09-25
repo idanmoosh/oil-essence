@@ -25,6 +25,7 @@ $black: black;
 #{$a-tags} {
   color: $ebony;
   text-decoration: none;
+  font-size: 3vh;
 }
 #{$a-tags-hover} {
   color: $artichoke;
@@ -37,6 +38,7 @@ header {
   background-color: $desert-sand;
   .OilEssence {
     color: $ebony;
+    font-size: 10vh;
     font-family: $msMadi;
   }
   .desktopMenu {
@@ -59,10 +61,14 @@ header {
   }
 
   @media screen and (max-width: $medium) {
+    .OilEssence {
+      font-size: 6.5vh;
+    }
     height: 8vh;
     .menuButton {
       display: block;
       color: $ebony;
+      font-size: 5vh;
     }
     .desktopMenu {
       display: none;
@@ -97,19 +103,18 @@ footer {
 
 h2 {
   font-family: $msMadi;
-  font-size: 5vh;
+  font-size: 8vh;
   color: $ebony;
 }
-
+html {
+  background-color: $champagne-pink;
+}
 .body {
   align-items: center;
   justify-content: space-around;
-  height: auto;
   align-items: center;
   display: flex;
-  background-color: white;
   flex-direction: column;
-  padding-top: 5vh;
 }
 /* Hero Section*/
 .Hero {
@@ -127,9 +132,9 @@ p {
   font-family: $plusJakarta;
 }
 
-span {
+.HeroSpan {
   font-family: $msMadi;
-  font-size: 4vh;
+  font-size: 5vh;
 }
 
 .heroImage {
@@ -146,4 +151,20 @@ span {
 }
 .oilImage {
   height: 35vh;
+}
+
+/* Store Section*/
+.StoreBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.oneProductContainer {
+  border: 2px solid $offWhite;
+  width: 60vw;
+}
+
+.productDetails {
+  width: 25vw;
+  background-color: $desert-sand;
 }

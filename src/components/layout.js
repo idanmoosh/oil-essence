@@ -6,7 +6,7 @@ import Dropdown from './dropown';
 
 export default function Layout() {
   return (
-    <div className='header'>
+    <div>
       <header>
         <h1>
           <Link className='OilEssence'>Oil Essence</Link>
