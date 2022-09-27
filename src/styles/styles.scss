@@ -1,106 +1,6 @@
-$a-tags: 'a, a:active, a:hover, a:visited';
-$a-tags-hover: 'a:active, a:hover';
-
-$small: 300px;
-$medium: 900px;
-/* FONTS
-        font-family: 'Ms Madi', cursive;
-
-        font-family: 'Plus Jakarta Sans', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap');
-$msMadi: 'Ms Madi';
-$plusJakarta: 'Plus Jakarta Sans';
-
-/* SCSS HEX */
-$antique-brass: #cb997eff;
-$desert-sand: #ddbea9ff;
-$champagne-pink: #ffe8d6ff;
-$ash-gray: #b7b7a4ff;
-$artichoke: #a5a58dff;
-$ebony: #6b705cff;
-$offWhite: rgb(255, 235, 222);
-$black: black;
-
-#{$a-tags} {
-  color: $ebony;
-  text-decoration: none;
-  font-size: 3vh;
-}
-#{$a-tags-hover} {
-  color: $artichoke;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: $desert-sand;
-  .OilEssence {
-    color: $ebony;
-    font-size: 10vh;
-    font-family: $msMadi;
-  }
-  .desktopMenu {
-    display: flex;
-    list-style: none;
-    width: 50vw;
-    justify-content: flex-end;
-  }
-  .menuButton {
-    display: none;
-  }
-  .dropdownMenu {
-    display: none;
-    list-style: none;
-  }
-
-  li {
-    width: 10vw;
-    font-family: $plusJakarta;
-  }
-
-  @media screen and (max-width: $medium) {
-    .OilEssence {
-      font-size: 6.5vh;
-    }
-    height: 8vh;
-    .menuButton {
-      display: block;
-      color: $ebony;
-      font-size: 5vh;
-    }
-    .desktopMenu {
-      display: none;
-    }
-  }
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  background-color: $artichoke;
-  align-items: center;
-  height: 8vh;
-  h3 {
-    color: $champagne-pink;
-    font-family: $plusJakarta;
-    font-size: 3vh;
-  }
-  span {
-    padding-left: 1vw;
-    font-family: $msMadi;
-    color: $champagne-pink;
-    font-size: 4vh;
-  }
-}
+@import './variables.scss', './layout.scss', './hero.scss';
 
 /* Theme for main body*/
-
 h2 {
   font-family: $msMadi;
   font-size: 8vh;
@@ -115,34 +15,6 @@ html {
   align-items: center;
   display: flex;
   flex-direction: column;
-}
-/* Hero Section*/
-.Hero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-.heroText {
-  width: 40vw;
-  line-height: 1.4;
-}
-p {
-  font-size: 3vh;
-  font-family: $plusJakarta;
-}
-
-.HeroSpan {
-  font-family: $msMadi;
-  font-size: 5vh;
-}
-
-.heroImage {
-  height: auto;
-  width: auto;
-}
-.heroImageFile {
-  height: 50vh;
 }
 /* About Section*/
 .logo {
@@ -160,11 +32,15 @@ p {
   flex-direction: column;
 }
 .oneProductContainer {
-  border: 2px solid $offWhite;
+  box-shadow: -5px 5px $artichoke;
+  color: $ebony;
+  padding: 10vh;
+  margin: 4vh;
   width: 60vw;
 }
 
 .productDetails {
   width: 25vw;
-  background-color: $desert-sand;
+  background-color: $champagne-pink;
+  font-family: $plusJakarta;
 }

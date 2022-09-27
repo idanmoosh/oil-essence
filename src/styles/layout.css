@@ -1,0 +1,104 @@
+/* FONTS
+        font-family: 'Ms Madi', cursive;
+
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:active, a:hover, a:visited {
+  color: #6b705c;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+a:active, a:hover {
+  color: #a5a58d;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ddbea9;
+}
+header .OilEssence {
+  color: #6b705c;
+  font-size: 10vh;
+  font-family: "Ms Madi";
+}
+header .desktopMenu {
+  display: flex;
+  list-style: none;
+  width: 50vw;
+  justify-content: flex-end;
+}
+header .menuButton {
+  display: none;
+}
+header .dropdownMenu {
+  display: none;
+  list-style: none;
+}
+header li {
+  width: 10vw;
+  font-family: "Plus Jakarta Sans";
+}
+@media screen and (max-width: 900px) {
+  header {
+    height: 8vh;
+  }
+  header .OilEssence {
+    font-size: 6.5vh;
+  }
+  header .menuButton {
+    display: block;
+    color: #6b705c;
+    font-size: 5vh;
+  }
+  header .menuButton:hover .dropdownMenu {
+    display: flex;
+  }
+  header .desktopMenu {
+    display: none;
+  }
+  header .dropdownMenu {
+    position: absolute;
+    background-color: #ddbea9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 10vh;
+    flex-direction: column;
+    top: 8vh;
+    right: 13vw;
+    padding: 2vh;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #a5a58d;
+  align-items: center;
+  height: 8vh;
+}
+footer h3 {
+  color: #ffe8d6;
+  font-family: "Plus Jakarta Sans";
+  font-size: 3vh;
+}
+footer span {
+  padding-left: 1vw;
+  font-family: "Ms Madi";
+  color: #ffe8d6;
+  font-size: 4vh;
+}/*# sourceMappingURL=layout.css.map */

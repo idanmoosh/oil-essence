@@ -1,0 +1,43 @@
+/* FONTS
+        font-family: 'Ms Madi', cursive;
+
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section*/
+.Hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.heroText {
+  width: 40vw;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 3vh;
+  font-family: "Plus Jakarta Sans";
+}
+
+.HeroSpan {
+  font-family: "Ms Madi";
+  font-size: 5vh;
+}
+
+.heroImage {
+  height: auto;
+  width: auto;
+}
+
+.heroImageFile {
+  height: 50vh;
+}/*# sourceMappingURL=hero.css.map */

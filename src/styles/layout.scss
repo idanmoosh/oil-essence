@@ -1,0 +1,94 @@
+@import './variables.scss';
+#{$a-tags} {
+  color: $ebony;
+  text-decoration: none;
+  font-size: 3vh;
+}
+#{$a-tags-hover} {
+  color: $artichoke;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $desert-sand;
+  .OilEssence {
+    color: $ebony;
+    font-size: 10vh;
+    font-family: $msMadi;
+  }
+  .desktopMenu {
+    display: flex;
+    list-style: none;
+    width: 50vw;
+    justify-content: flex-end;
+  }
+  .menuButton {
+    display: none;
+  }
+  .dropdownMenu {
+    display: none;
+    list-style: none;
+  }
+
+  li {
+    width: 10vw;
+    font-family: $plusJakarta;
+  }
+
+  @media screen and (max-width: $medium) {
+    .OilEssence {
+      font-size: 6.5vh;
+    }
+    height: 8vh;
+    .menuButton {
+      display: block;
+      color: $ebony;
+      font-size: 5vh;
+    }
+    .menuButton:hover {
+      .dropdownMenu {
+        display: flex;
+      }
+    }
+    .desktopMenu {
+      display: none;
+    }
+    .dropdownMenu {
+      position: absolute;
+      background-color: $desert-sand;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      line-height: 10vh;
+      flex-direction: column;
+      top: 8vh;
+      right: 13vw;
+      padding: 2vh;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: $artichoke;
+  align-items: center;
+  height: 8vh;
+  h3 {
+    color: $champagne-pink;
+    font-family: $plusJakarta;
+    font-size: 3vh;
+  }
+  span {
+    padding-left: 1vw;
+    font-family: $msMadi;
+    color: $champagne-pink;
+    font-size: 4vh;
+  }
+}

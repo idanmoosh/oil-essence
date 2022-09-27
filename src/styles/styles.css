@@ -4,6 +4,25 @@
         font-family: 'Plus Jakarta Sans', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
 /* SCSS HEX */
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS
+        font-family: 'Ms Madi', cursive;
+
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 a, a:active, a:hover, a:visited {
   color: #6b705c;
   text-decoration: none;
@@ -57,6 +76,23 @@ header li {
   header .desktopMenu {
     display: none;
   }
+  header .dropdownMenu {
+    position: absolute;
+    display: none;
+  }
+  header .dropdownMenu ul {
+    background-color: #ddbea9;
+    top: 8vh;
+    right: 10vw;
+    line-height: 5vh;
+    font-size: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 5;
+  }
+  header .dropdownMenu ul li {
+    border-top: 2px solid #6b705c;
+  }
 }
 
 footer {
@@ -82,23 +118,15 @@ footer span {
   font-size: 4vh;
 }
 
-/* Theme for main body*/
-h2 {
-  font-family: "Ms Madi";
-  font-size: 8vh;
-  color: #6b705c;
-}
+/* FONTS
+        font-family: 'Ms Madi', cursive;
 
-html {
-  background-color: #ffe8d6;
-}
-
-.body {
-  align-items: center;
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Hero Section*/
@@ -133,6 +161,25 @@ p {
   height: 50vh;
 }
 
+/* Theme for main body*/
+h2 {
+  font-family: "Ms Madi";
+  font-size: 8vh;
+  color: #6b705c;
+}
+
+html {
+  background-color: #ffe8d6;
+}
+
+.body {
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 /* About Section*/
 .logo {
   height: 35vh;
@@ -151,11 +198,15 @@ p {
 }
 
 .oneProductContainer {
-  border: 2px solid rgb(255, 235, 222);
+  box-shadow: -5px 5px #a5a58d;
+  color: #6b705c;
+  padding: 10vh;
+  margin: 4vh;
   width: 60vw;
 }
 
 .productDetails {
   width: 25vw;
-  background-color: #ddbea9;
+  background-color: #ffe8d6;
+  font-family: "Plus Jakarta Sans";
 }/*# sourceMappingURL=styles.css.map */

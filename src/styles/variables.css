@@ -1,0 +1,11 @@
+/* FONTS
+        font-family: 'Ms Madi', cursive;
+
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=variables.css.map */

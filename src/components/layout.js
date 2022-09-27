@@ -9,7 +9,9 @@ export default function Layout() {
     <div>
       <header>
         <h1>
-          <Link className='OilEssence'>Oil Essence</Link>
+          <Link to='/' className='OilEssence'>
+            Oil Essence
+          </Link>
         </h1>
         {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
