@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import HeroImage from '../media/HeroImage.jpg';
-
 export default function Hero() {
   return (
     <section className='Hero'>
@@ -24,7 +22,11 @@ export default function Hero() {
         </p>
       </div>
       <div className='heroImage'>
-        <img className='heroImageFile' src={HeroImage} alt='ProductImage' />
+        <img
+          className='heroImageFile'
+          src={'./media/HeroImage.jpg'}
+          alt='ProductImage'
+        />
       </div>
     </section>
   );

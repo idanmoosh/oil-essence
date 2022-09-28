@@ -58,7 +58,6 @@ header {
     .dropdownMenu {
       position: absolute;
       background-color: $desert-sand;
-      display: flex;
       align-items: center;
       text-align: center;
       line-height: 10vh;
@@ -66,6 +65,9 @@ header {
       top: 8vh;
       right: 13vw;
       padding: 2vh;
+    }
+    .dropdownMenu.expanded {
+      display: flex;
     }
   }
 }

@@ -5,7 +5,12 @@ import '../../src/styles/layout.scss';
 
 export default function Dropdown(props) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  console.log(isNavExpanded);
+
+  let menuClasses = 'dropdownMenu';
+
+  if (isNavExpanded) {
+    menuClasses += ' expanded';
+  }
   return (
     <div className='dropdown'>
       <IoIosMenu
@@ -14,11 +19,7 @@ export default function Dropdown(props) {
           setIsNavExpanded(!isNavExpanded);
         }}
       />
-      <Menu
-        id='dropdownMenu'
-        className={'dropdownMenu'}
-        style={isNavExpanded ? { display: 'block' } : { display: 'none' }}
-      />
+      <Menu className={menuClasses} />
     </div>
   );
 }

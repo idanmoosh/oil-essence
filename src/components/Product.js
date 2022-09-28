@@ -1,10 +1,6 @@
-import { useEffect, useState } from 'react';
-
 const Product = props => {
-  const [image, setImage] = useState(null);
   const { name, description, imgLink, price } = props.product;
 
-  useEffect(() => (imgLink ? setImage(imgLink) : setImage(null)));
   return (
     <div className='oneProductContainer'>
       <div className='productDetails'>
@@ -12,9 +8,7 @@ const Product = props => {
         <p>{description}</p>
         <p>{price}</p>
       </div>
-      <div className='imgContainer' alt={name}>
-        <img src={image} alt={name} />
-      </div>
+      <img src={imgLink} className='productImage' alt={name} />
     </div>
   );
 };

@@ -32,6 +32,7 @@ html {
   flex-direction: column;
 }
 .oneProductContainer {
+  display: flex;
   box-shadow: -5px 5px $artichoke;
   color: $ebony;
   padding: 10vh;
@@ -43,4 +44,7 @@ html {
   width: 25vw;
   background-color: $champagne-pink;
   font-family: $plusJakarta;
+}
+.productImage {
+  width: 100%;
 }

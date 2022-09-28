@@ -1,6 +1,3 @@
-import OilImage from '../media/oilbottles.jpg';
-import Logo from '../media/4-2.png';
-
 export default function About() {
   return (
     <div className='body'>
@@ -16,7 +13,7 @@ export default function About() {
           </p>
         </div>
         <div className='heroImage'>
-          <img className='logo' src={Logo} alt='ProductImage' />
+          <img className='logo' src='./media/4-2.png' alt='ProductImage' />
         </div>
       </section>
       <section className='Hero'>
@@ -37,7 +34,11 @@ export default function About() {
           </p>
         </div>
         <div className='heroImage'>
-          <img className='oilImage' src={OilImage} alt='ProductImage' />
+          <img
+            className='oilImage'
+            src='./media/oilbottles.jpg'
+            alt='ProductImage'
+          />
         </div>
       </section>
     </div>

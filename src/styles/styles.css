@@ -73,25 +73,23 @@ header li {
     color: #6b705c;
     font-size: 5vh;
   }
+  header .menuButton:hover .dropdownMenu {
+    display: flex;
+  }
   header .desktopMenu {
     display: none;
   }
   header .dropdownMenu {
     position: absolute;
-    display: none;
-  }
-  header .dropdownMenu ul {
     background-color: #ddbea9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 10vh;
+    flex-direction: column;
     top: 8vh;
-    right: 10vw;
-    line-height: 5vh;
-    font-size: 2vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    z-index: 5;
-  }
-  header .dropdownMenu ul li {
-    border-top: 2px solid #6b705c;
+    right: 13vw;
+    padding: 2vh;
   }
 }
 
@@ -198,6 +196,7 @@ html {
 }
 
 .oneProductContainer {
+  display: flex;
   box-shadow: -5px 5px #a5a58d;
   color: #6b705c;
   padding: 10vh;
@@ -209,4 +208,8 @@ html {
   width: 25vw;
   background-color: #ffe8d6;
   font-family: "Plus Jakarta Sans";
+}
+
+.productImage {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

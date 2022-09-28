@@ -69,7 +69,6 @@ header li {
   header .dropdownMenu {
     position: absolute;
     background-color: #ddbea9;
-    display: flex;
     align-items: center;
     text-align: center;
     line-height: 10vh;
@@ -77,6 +76,9 @@ header li {
     top: 8vh;
     right: 13vw;
     padding: 2vh;
+  }
+  header .dropdownMenu.expanded {
+    display: flex;
   }
 }
 
