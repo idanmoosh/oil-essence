@@ -37,7 +37,6 @@ export default function Store() {
   });*/
   return (
     <div className='StoreBody'>
-      <h2>Store</h2>
       <div className='ProductsContainer'>
         {DB.map(product => (
           <Product product={product} key={product.id} />

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className='body'>
+    <div className='aboutBody'>
       <section className='Hero'>
         <div className='heroText'>
           {' '}
@@ -13,7 +13,7 @@ export default function About() {
           </p>
         </div>
         <div className='heroImage'>
-          <img className='logo' src='./media/4-2.png' alt='ProductImage' />
+          <img className='logo' src='./media/4-2.png' alt='company logo' />
         </div>
       </section>
       <section className='Hero'>

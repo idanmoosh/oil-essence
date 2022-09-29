@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import NoMatch from './components/NoMatch';
 import Store from './components/Store';
+import Contact from './components/contact';
 export default function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='store' element={<Store />} />
+          <Route path='contact' element={<Contact />} />
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}

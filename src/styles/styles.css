@@ -6,6 +6,9 @@
 /* SCSS HEX */
 @import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +29,7 @@
 a, a:active, a:hover, a:visited {
   color: #6b705c;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 a:active, a:hover {
@@ -38,17 +41,18 @@ header {
   align-items: center;
   justify-content: space-around;
   background-color: #ddbea9;
+  margin-bottom: 4vh;
 }
 header .OilEssence {
   color: #6b705c;
-  font-size: 10vh;
+  font-size: 6vh;
   font-family: "Ms Madi";
 }
 header .desktopMenu {
   display: flex;
-  list-style: none;
-  width: 50vw;
   justify-content: flex-end;
+  width: 55vw;
+  list-style: none;
 }
 header .menuButton {
   display: none;
@@ -58,23 +62,24 @@ header .dropdownMenu {
   list-style: none;
 }
 header li {
-  width: 10vw;
+  width: 7vw;
   font-family: "Plus Jakarta Sans";
 }
 @media screen and (max-width: 900px) {
   header {
-    height: 8vh;
+    height: 6vh;
   }
   header .OilEssence {
-    font-size: 6.5vh;
+    font-size: 4vh;
   }
   header .menuButton {
     display: block;
     color: #6b705c;
     font-size: 5vh;
   }
-  header .menuButton:hover .dropdownMenu {
-    display: flex;
+  header .menuButton:hover {
+    border: 1px solid #6b705c;
+    border-radius: 10%;
   }
   header .desktopMenu {
     display: none;
@@ -82,7 +87,6 @@ header li {
   header .dropdownMenu {
     position: absolute;
     background-color: #ddbea9;
-    display: flex;
     align-items: center;
     text-align: center;
     line-height: 10vh;
@@ -90,6 +94,14 @@ header li {
     top: 8vh;
     right: 13vw;
     padding: 2vh;
+    z-index: 5;
+  }
+  header .dropdownMenu.expanded {
+    display: flex;
+  }
+  header .menuButton.expanded {
+    border: 1px solid #6b705c;
+    border-radius: 10%;
   }
 }
 
@@ -102,18 +114,18 @@ footer {
   justify-content: center;
   background-color: #a5a58d;
   align-items: center;
-  height: 8vh;
+  height: 6vh;
 }
 footer h3 {
   color: #ffe8d6;
   font-family: "Plus Jakarta Sans";
-  font-size: 3vh;
+  font-size: 2vh;
 }
 footer span {
   padding-left: 1vw;
   font-family: "Ms Madi";
   color: #ffe8d6;
-  font-size: 4vh;
+  font-size: 3vh;
 }
 
 /* FONTS
@@ -159,6 +171,160 @@ p {
   height: 50vh;
 }
 
+/* FONTS
+        font-family: 'Ms Madi', cursive;
+
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4vw;
+  width: 100%;
+  font-family: "Plus Jakarta Sans";
+  color: #6b705c;
+}
+.contactSection h2 {
+  font-size: 4vh;
+  text-align: center;
+  width: 100%;
+  text-align: left;
+  padding-left: 4vw;
+}
+.contactSection .formSection {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 4vw;
+}
+.contactSection .contactForm {
+  display: flex;
+  flex-direction: column;
+}
+.contactSection .contactForm textarea {
+  height: 5vh;
+  width: 100%;
+  resize: none;
+  height: 30vh;
+}
+.contactSection .contactForm label {
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+.contactSection .input {
+  height: 4vh;
+}
+.contactSection .companyDetails {
+  padding: 4vw;
+}
+.contactSection h3 {
+  padding-bottom: 2vh;
+}
+.contactSection ul {
+  list-style: none;
+  padding-top: 2vh;
+}
+.contactSection li {
+  padding-bottom: 2vh;
+}
+.contactSection .submitButton {
+  background-color: #a5a58d;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  text-decoration: none;
+  font-size: 2vh;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* FONTS
+        font-family: 'Ms Madi', cursive;
+
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Store Section*/
+.StoreBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.oneProductContainer {
+  display: flex;
+  padding: 10vh;
+  margin: 4vh;
+  width: 60vw;
+  align-items: center;
+  border: 3px solid #ddbea9;
+}
+
+.productDetails {
+  width: 25vw;
+  background-color: #ffe8d6;
+  font-family: "Plus Jakarta Sans";
+  color: #6b705c;
+}
+.productDetails h3 {
+  font-size: 4vh;
+  padding-bottom: 2vh;
+}
+.productDetails p {
+  font-size: 2.5vh;
+  font-family: "Plus Jakarta Sans";
+}
+
+.productImage {
+  height: 40vh;
+  padding-left: 5vw;
+}
+
+/* FONTS
+        font-family: 'Ms Madi', cursive;
+
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.buttonClass {
+  font-size: 2.5vh;
+  color: #6b705c;
+}
+
+.buttonClass.expanded {
+  color: #ffe8d6;
+}
+
+.SignInClass {
+  display: none;
+}
+
+.accountClass {
+  display: none;
+}
+
+.SignInClass.expanded {
+  display: block;
+}
+
 /* Theme for main body*/
 h2 {
   font-family: "Ms Madi";
@@ -179,37 +345,18 @@ html {
 }
 
 /* About Section*/
-.logo {
-  height: 35vh;
-  align-items: center;
-}
-
-.oilImage {
-  height: 35vh;
-}
-
-/* Store Section*/
-.StoreBody {
+.Hero {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  padding-bottom: 5vh;
 }
-
-.oneProductContainer {
-  display: flex;
-  box-shadow: -5px 5px #a5a58d;
-  color: #6b705c;
-  padding: 10vh;
-  margin: 4vh;
-  width: 60vw;
+.Hero h2 {
+  width: 50vw;
 }
-
-.productDetails {
-  width: 25vw;
-  background-color: #ffe8d6;
-  font-family: "Plus Jakarta Sans";
+.Hero .logo {
+  height: 35vh;
 }
-
-.productImage {
-  width: 100%;
+.Hero .oilImage {
+  height: 35vh;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,7 @@
 #{$a-tags} {
   color: $ebony;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 #{$a-tags-hover} {
   color: $artichoke;
@@ -13,16 +13,17 @@ header {
   align-items: center;
   justify-content: space-around;
   background-color: $desert-sand;
+  margin-bottom: 4vh;
   .OilEssence {
     color: $ebony;
-    font-size: 10vh;
+    font-size: 6vh;
     font-family: $msMadi;
   }
   .desktopMenu {
     display: flex;
-    list-style: none;
-    width: 50vw;
     justify-content: flex-end;
+    width: 55vw;
+    list-style: none;
   }
   .menuButton {
     display: none;
@@ -31,27 +32,29 @@ header {
     display: none;
     list-style: none;
   }
-
   li {
-    width: 10vw;
+    width: 7vw;
     font-family: $plusJakarta;
   }
 
   @media screen and (max-width: $medium) {
     .OilEssence {
-      font-size: 6.5vh;
+      font-size: 4vh;
     }
-    height: 8vh;
+    height: 6vh;
     .menuButton {
+      position: absolute;
       display: block;
       color: $ebony;
       font-size: 5vh;
+      right: 23vw;
+      top: 0.6vh;
     }
     .menuButton:hover {
-      .dropdownMenu {
-        display: flex;
-      }
+      border: 1px solid $ebony;
+      border-radius: 10%;
     }
+
     .desktopMenu {
       display: none;
     }
@@ -62,12 +65,18 @@ header {
       text-align: center;
       line-height: 10vh;
       flex-direction: column;
-      top: 8vh;
-      right: 13vw;
+      top: 6vh;
+      right: 12vw;
       padding: 2vh;
+      width: 30vw;
+      z-index: 5;
     }
     .dropdownMenu.expanded {
       display: flex;
+    }
+    .menuButton.expanded {
+      border: 1px solid $ebony;
+      border-radius: 10%;
     }
   }
 }
@@ -81,16 +90,16 @@ footer {
   justify-content: center;
   background-color: $artichoke;
   align-items: center;
-  height: 8vh;
+  height: 6vh;
   h3 {
     color: $champagne-pink;
     font-family: $plusJakarta;
-    font-size: 3vh;
+    font-size: 2vh;
   }
   span {
     padding-left: 1vw;
     font-family: $msMadi;
     color: $champagne-pink;
-    font-size: 4vh;
+    font-size: 3vh;
   }
 }

@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+.contactSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4vw;
+  width: 100%;
+  font-family: $plusJakarta;
+  color: $ebony;
+
+  h2 {
+    font-size: 4vh;
+    text-align: center;
+    width: 100%;
+    text-align: left;
+    padding-left: 4vw;
+  }
+  .formSection {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 4vw;
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    textarea {
+      height: 5vh;
+      width: 100%;
+      resize: none;
+      height: 30vh;
+    }
+    label {
+      padding-bottom: 1vh;
+      padding-top: 1vh;
+    }
+  }
+  .input {
+    height: 4vh;
+  }
+
+  .companyDetails {
+    padding: 4vw;
+  }
+  h3 {
+    padding-bottom: 2vh;
+  }
+  ul {
+    list-style: none;
+    padding-top: 2vh;
+  }
+  li {
+    padding-bottom: 2vh;
+  }
+  .submitButton {
+    background-color: $artichoke;
+    border: none;
+    color: white;
+    padding: 1vh 2vh;
+    text-decoration: none;
+    font-size: 2vh;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+}

@@ -13,7 +13,7 @@
 a, a:active, a:hover, a:visited {
   color: #6b705c;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 a:active, a:hover {
@@ -25,17 +25,18 @@ header {
   align-items: center;
   justify-content: space-around;
   background-color: #ddbea9;
+  margin-bottom: 4vh;
 }
 header .OilEssence {
   color: #6b705c;
-  font-size: 10vh;
+  font-size: 6vh;
   font-family: "Ms Madi";
 }
 header .desktopMenu {
   display: flex;
-  list-style: none;
-  width: 50vw;
   justify-content: flex-end;
+  width: 55vw;
+  list-style: none;
 }
 header .menuButton {
   display: none;
@@ -45,23 +46,27 @@ header .dropdownMenu {
   list-style: none;
 }
 header li {
-  width: 10vw;
+  width: 7vw;
   font-family: "Plus Jakarta Sans";
 }
 @media screen and (max-width: 900px) {
   header {
-    height: 8vh;
+    height: 6vh;
   }
   header .OilEssence {
-    font-size: 6.5vh;
+    font-size: 4vh;
   }
   header .menuButton {
+    position: absolute;
     display: block;
     color: #6b705c;
     font-size: 5vh;
+    right: 23vw;
+    top: 0.6vh;
   }
-  header .menuButton:hover .dropdownMenu {
-    display: flex;
+  header .menuButton:hover {
+    border: 1px solid #6b705c;
+    border-radius: 10%;
   }
   header .desktopMenu {
     display: none;
@@ -73,12 +78,18 @@ header li {
     text-align: center;
     line-height: 10vh;
     flex-direction: column;
-    top: 8vh;
-    right: 13vw;
+    top: 6vh;
+    right: 12vw;
     padding: 2vh;
+    width: 30vw;
+    z-index: 5;
   }
   header .dropdownMenu.expanded {
     display: flex;
+  }
+  header .menuButton.expanded {
+    border: 1px solid #6b705c;
+    border-radius: 10%;
   }
 }
 
@@ -91,16 +102,16 @@ footer {
   justify-content: center;
   background-color: #a5a58d;
   align-items: center;
-  height: 8vh;
+  height: 6vh;
 }
 footer h3 {
   color: #ffe8d6;
   font-family: "Plus Jakarta Sans";
-  font-size: 3vh;
+  font-size: 2vh;
 }
 footer span {
   padding-left: 1vw;
   font-family: "Ms Madi";
   color: #ffe8d6;
-  font-size: 4vh;
+  font-size: 3vh;
 }/*# sourceMappingURL=layout.css.map */

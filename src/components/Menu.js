@@ -12,6 +12,9 @@ function Menu(props) {
       <li>
         <Link to='/store'>Store</Link>
       </li>
+      <li>
+        <Link to='/contact'>Contact</Link>
+      </li>
     </ul>
   );
 }

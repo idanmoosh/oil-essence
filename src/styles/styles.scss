@@ -1,5 +1,7 @@
 @import './variables.scss', './layout.scss', './hero.scss';
-
+@import './contacts.scss';
+@import './store.scss';
+@import './LoginButton.scss';
 /* Theme for main body*/
 h2 {
   font-family: $msMadi;
@@ -17,34 +19,18 @@ html {
   flex-direction: column;
 }
 /* About Section*/
-.logo {
-  height: 35vh;
-  align-items: center;
-}
-.oilImage {
-  height: 35vh;
-}
-
-/* Store Section*/
-.StoreBody {
+.Hero {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-}
-.oneProductContainer {
-  display: flex;
-  box-shadow: -5px 5px $artichoke;
-  color: $ebony;
-  padding: 10vh;
-  margin: 4vh;
-  width: 60vw;
-}
-
-.productDetails {
-  width: 25vw;
-  background-color: $champagne-pink;
-  font-family: $plusJakarta;
-}
-.productImage {
-  width: 100%;
+  padding-bottom: 5vh;
+  h2 {
+    width: 50vw;
+  }
+  .logo {
+    height: 35vh;
+  }
+  .oilImage {
+    height: 35vh;
+  }
 }

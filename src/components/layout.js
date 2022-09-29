@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 import '../styles/styles.css';
 import Menu from './Menu';
 import Dropdown from './dropown';
+import Login from './Login';
 
 export default function Layout() {
   return (
@@ -17,6 +18,7 @@ export default function Layout() {
           share across all the pages on your site, like navigation. */}
         <Dropdown />
         <Menu className='desktopMenu' />
+        <Login />
       </header>
 
       {/* An <Outlet> renders whatever child route is currently active,

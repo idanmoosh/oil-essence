@@ -1,0 +1,74 @@
+/* FONTS
+        font-family: 'Ms Madi', cursive;
+
+        font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap");
+/* SCSS HEX */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4vw;
+  width: 100%;
+  font-family: "Plus Jakarta Sans";
+  color: #6b705c;
+}
+.contactSection h2 {
+  font-size: 4vh;
+  text-align: center;
+  width: 100%;
+  text-align: left;
+  padding-left: 4vw;
+}
+.contactSection .formSection {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 4vw;
+}
+.contactSection .contactForm {
+  display: flex;
+  flex-direction: column;
+}
+.contactSection .contactForm textarea {
+  height: 5vh;
+  width: 100%;
+  resize: none;
+  height: 30vh;
+}
+.contactSection .contactForm label {
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+.contactSection .input {
+  height: 4vh;
+}
+.contactSection .companyDetails {
+  padding: 4vw;
+}
+.contactSection h3 {
+  padding-bottom: 2vh;
+}
+.contactSection ul {
+  list-style: none;
+  padding-top: 2vh;
+}
+.contactSection li {
+  padding-bottom: 2vh;
+}
+.contactSection .submitButton {
+  background-color: #a5a58d;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  text-decoration: none;
+  font-size: 2vh;
+  margin: 4px 2px;
+  cursor: pointer;
+}/*# sourceMappingURL=contacts.css.map */

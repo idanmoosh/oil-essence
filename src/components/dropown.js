@@ -7,14 +7,16 @@ export default function Dropdown(props) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   let menuClasses = 'dropdownMenu';
+  let buttonClass = 'menuButton';
 
   if (isNavExpanded) {
     menuClasses += ' expanded';
+    buttonClass += ' expanded';
   }
   return (
     <div className='dropdown'>
       <IoIosMenu
-        className='menuButton'
+        className={buttonClass}
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}

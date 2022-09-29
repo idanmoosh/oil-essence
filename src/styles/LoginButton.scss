@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.buttonClass {
+  font-size: 2.5vh;
+  color: $ebony;
+}
+
+.buttonClass.expanded {
+  color: $champagne-pink;
+}
+
+.SignIn {
+  position: absolute;
+  top: 8vh;
+  right: 20vw;
+  display: none;
+  background-color: $desert-sand;
+  padding: 2vw;
+}
+.Account {
+  position: absolute;
+  top: 8vh;
+  right: 20vw;
+  display: none;
+  background-color: $desert-sand;
+  padding: 2vw;
+}
+.SignIn.expanded {
+  display: block;
+}
+.Account.expanded {
+  display: block;
+}
