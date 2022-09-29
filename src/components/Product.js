@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 const Product = props => {
-  const { name, description, imgLink, price } = props.product;
+  const { id, name, description, imgLink, price } = props.product;
 
   return (
-    <Link className='oneProductContainer'>
+    <Link to={`/store/${id}`} className='oneProductContainer'>
       <div className='productDetails'>
         <h3>{name}</h3>
         <p>{description}</p>

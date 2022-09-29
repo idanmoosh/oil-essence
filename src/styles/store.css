@@ -24,7 +24,8 @@
   margin: 4vh;
   width: 60vw;
   align-items: center;
-  border: 3px solid #ddbea9;
+  border: 1px solid #ddbea9;
+  box-shadow: 5px 5px #ddbea9;
 }
 
 .productDetails {
@@ -36,10 +37,10 @@
 .productDetails h3 {
   font-size: 4vh;
   padding-bottom: 2vh;
+  font-family: "Ms Madi";
 }
 .productDetails p {
   font-size: 2.5vh;
-  font-family: "Plus Jakarta Sans";
 }
 
 .productImage {

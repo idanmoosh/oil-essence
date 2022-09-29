@@ -52,6 +52,9 @@
 .contactSection .companyDetails {
   padding: 4vw;
 }
+.contactSection .companyDetails .logo {
+  width: 30vw;
+}
 .contactSection h3 {
   padding-bottom: 2vh;
 }
