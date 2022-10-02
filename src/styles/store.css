@@ -22,7 +22,8 @@
   display: flex;
   padding: 10vh;
   margin: 4vh;
-  width: 60vw;
+  width: 80vw;
+  height: 60vh;
   align-items: center;
   border: 1px solid #ddbea9;
   box-shadow: 5px 5px #ddbea9;
@@ -44,6 +45,7 @@
 }
 
 .productImage {
-  height: 40vh;
+  max-width: 60%;
+  height: 80%;
   padding-left: 5vw;
 }/*# sourceMappingURL=store.css.map */

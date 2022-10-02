@@ -11,7 +11,8 @@
   display: flex;
   padding: 10vh;
   margin: 4vh;
-  width: 60vw;
+  width: 80vw;
+  height: 60vh;
   align-items: center;
   border: 1px solid $desert-sand;
   box-shadow: 5px 5px $desert-sand;
@@ -33,6 +34,7 @@
   }
 }
 .productImage {
-  height: 40vh;
+  max-width: 60%;
+  max-height: 80%;
   padding-left: 5vw;
 }
